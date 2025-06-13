@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /
+Allow: /privacy
+Allow: /terms
+
+# Block admin areas (future-proofing)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dashboard/
+
+# Sitemap
+Sitemap: https://finpilot.vercel.app/sitemap.xml 

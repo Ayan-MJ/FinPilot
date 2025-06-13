@@ -142,20 +142,27 @@ export default function Footer() {
           {/* Newsletter section */}
           <div className="border-t border-white/10 pt-8 mb-8">
             <div className="max-w-md">
-              <h3 className="font-semibold mb-4">Stay updated</h3>
+              <h3 className="font-semibold mb-4 text-white">Stay updated</h3>
               <p className="text-gray-400 text-sm mb-4">
-                Get product updates, tips, and exclusive insights for smart money management.
+                Get product updates, financial tips, and exclusive early access.
               </p>
-              <div className="flex gap-3">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors"
-                />
-                <button className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                  Subscribe
-                </button>
-              </div>
+              
+              <form className="space-y-3">
+                <div className="flex gap-3">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center gap-2"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
 

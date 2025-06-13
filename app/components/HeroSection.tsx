@@ -121,6 +121,42 @@ export default function HeroSection() {
               </motion.p>
             </motion.div>
 
+            {/* Early Access Signup */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.4, duration: 0.8 }}
+              className="mt-8"
+            >
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-accent rounded-full animate-pulse-slow" />
+                  Get Early Access + Free Resources
+                </h3>
+                
+                <form className="space-y-4">
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      required
+                      className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                    />
+                    <button
+                      type="submit"
+                      className="px-6 py-3 bg-accent hover:bg-accent/90 text-dark-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-accent/25 flex items-center justify-center gap-2 min-w-[140px]"
+                    >
+                      Join Waitlist
+                    </button>
+                  </div>
+                </form>
+                
+                <p className="text-sm text-white/70 mt-3">
+                  🎁 Free Mint migration guide + early beta access
+                </p>
+              </div>
+            </motion.div>
+
             {/* Right content - App mockup */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}

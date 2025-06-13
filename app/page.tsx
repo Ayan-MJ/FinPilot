@@ -4,6 +4,7 @@ import FeaturesSection from './components/FeaturesSection'
 import PersonasSection from './components/PersonasSection'
 import MintMigrationBanner from './components/MintMigrationBanner'
 import TrustSection from './components/TrustSection'
+import NewsletterSignup from './components/NewsletterSignup'
 import Footer from './components/Footer'
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
       <PersonasSection />
       <MintMigrationBanner />
       <TrustSection />
+      <NewsletterSignup />
       <Footer />
     </main>
   )
