@@ -60,7 +60,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="bg-light-base py-20 lg:py-32">
+    <section id="features-section" className="bg-light-base py-20 lg:py-32">
       <div className="section-padding">
         <div className="container-max">
           {/* Section header */}

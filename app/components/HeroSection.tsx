@@ -100,12 +100,24 @@ export default function HeroSection() {
                 transition={{ delay: 1, duration: 0.8 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <button className="group bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-2xl font-semibold text-scale-2 transition-all duration-300 hover:shadow-xl hover:shadow-primary/25 flex items-center justify-center gap-2">
+                <button 
+                  onClick={() => {
+                    const newsletterSection = document.getElementById('newsletter-signup');
+                    newsletterSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="group bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-2xl font-semibold text-scale-2 transition-all duration-300 hover:shadow-xl hover:shadow-primary/25 flex items-center justify-center gap-2"
+                >
                   Start Free
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 
-                <button className="border-2 border-gray-600 hover:border-accent text-white hover:text-accent px-8 py-4 rounded-2xl font-semibold text-scale-2 transition-all duration-300">
+                <button 
+                  onClick={() => {
+                    const featuresSection = document.getElementById('features-section');
+                    featuresSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="border-2 border-gray-600 hover:border-accent text-white hover:text-accent px-8 py-4 rounded-2xl font-semibold text-scale-2 transition-all duration-300"
+                >
                   Watch Demo
                 </button>
               </motion.div>
@@ -119,42 +131,6 @@ export default function HeroSection() {
               >
                 No credit card required • Import Mint data in 2 minutes
               </motion.p>
-            </motion.div>
-
-            {/* Early Access Signup */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.4, duration: 0.8 }}
-              className="mt-8"
-            >
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-accent rounded-full animate-pulse-slow" />
-                  Get Early Access + Free Resources
-                </h3>
-                
-                <form className="space-y-4">
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      required
-                      className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                    />
-                    <button
-                      type="submit"
-                      className="px-6 py-3 bg-accent hover:bg-accent/90 text-dark-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-accent/25 flex items-center justify-center gap-2 min-w-[140px]"
-                    >
-                      Join Waitlist
-                    </button>
-                  </div>
-                </form>
-                
-                <p className="text-sm text-white/70 mt-3">
-                  🎁 Free Mint migration guide + early beta access
-                </p>
-              </div>
             </motion.div>
 
             {/* Right content - App mockup */}

@@ -15,7 +15,9 @@ export default function HomePage() {
       <PersonasSection />
       <MintMigrationBanner />
       <TrustSection />
-      <NewsletterSignup />
+      <div id="newsletter-signup">
+        <NewsletterSignup />
+      </div>
       <Footer />
     </main>
   )
